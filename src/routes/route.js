@@ -1,11 +1,11 @@
 const express = require('express');
-const router = express.Router(); 
-const controller=require("../controller/urlController")
+const router = express.Router();
+const { makeShortUrl, reDirect } = require("../controller/urlController")
 
 //url's
-router.post("/url/shorten",controller.makeShortUrl)
-router.get("/:urlCode",controller.reDirect)
+router.post("/url/shorten", makeShortUrl)
+router.get("/:urlCode", reDirect)
 router.all('/*', function (req, res) {
-    res.status(404).send({status: false, msg: 'page not found'});
+    res.status(404).send({ status: false, msg: 'page not found' });
 });
-module.exports= router
+module.exports = router

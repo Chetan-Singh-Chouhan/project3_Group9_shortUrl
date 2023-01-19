@@ -18,6 +18,11 @@
   },
   "homepage": "https://github.com/Chetan-Singh-Chouhan/project3_Group9_shortUrl#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "mongoose": "^6.8.4",
+    "redis": "^3.1.2",
+    "shortid": "^2.2.16",
+    "util": "^0.12.5",
+    "valid-url": "^1.0.9"
   }
 }
